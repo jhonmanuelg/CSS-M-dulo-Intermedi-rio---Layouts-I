@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>CSS Módulo Intermediário-Layouts I</title>
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <h1 class="titulo">
+            <span class="titulo-prinicipal">Wikipedia</span>
+            <span class="titulo-segundario">A enciclopédia livre</span>
+        </h1>
+
+    </header>
+    <!-- inicia seçao para apises-->
+    <section class="paises">
+        <img src="https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia.png" alt="imagen de WIKIPEDIA" class="img-paise">
+
+        <nav>
+            <ul class="paises-menu">
+                <li class="paises-i pais1">
+                    <a href="#">
+                        <span class="paises-idioma">
+                            Portuguẽs
+                      </span>
+                        <span class="paise-artigos">
+                          1 066 000+  artigos                      
+                      </span>
+                    </a>
+
+                </li>
+
+            </ul>
+
+            <ul class="paises-menu">
+                <li class="paises-i pais2">
+                    <a href="#">
+                        <span class="paises-idioma">
+                            Español
+                      </span>
+                        <span class="paise-artigos">
+                         1 696 000+ articulos                     
+                      </span>
+                    </a>
+
+                </li>
+            </ul>
+
+            <ul class="paises-menu">
+                <li class="paises-i pais3">
+                    <a href="#">
+                        <span class="paises-idioma">
+                            English
+                      </span>
+                        <span class="paise-artigos">
+                          6 326 000+  articles                      
+                      </span>
+                    </a>
+
+                </li>
+
+            </ul>
+            <ul class="paises-menu">
+                <li class="paises-i pais4">
+                    <a href="#">
+                        <span class="paises-idioma">
+                            Japones
+                      </span>
+                        <span class="paise-artigos">
+                          1 480 000+ Japon                     
+                      </span>
+                    </a>
+
+                </li>
+
+            </ul>
+
+
+
+            <ul class="paises-menu">
+                <li class="paises-i pais5">
+                    <a href="#">
+                        <span class="paises-idioma">
+                            Deutsch
+                      </span>
+                        <span class="paise-artigos">
+                          2 590 00+ arttikle                     
+                      </span>
+                    </a>
+
+                </li>
+
+            </ul>
+
+            <ul class="paises-menu">
+                <li class="paises-i pais6">
+                    <a href="#">
+                        <span class="paises-idioma">
+                            Russo
+                      </span>
+                        <span class="paise-artigos">
+                          1 734 000+ ctateñ                      
+                      </span>
+                    </a>
+
+                </li>
+
+            </ul>
+
+            <ul class="paises-menu">
+                <li class="paises-i pais7">
+                    <a href="#">
+                        <span class="paises-idioma">
+                            Français
+                      </span>
+                        <span class="paise-artigos">
+                          2 430 000+ articles                      
+                      </span>
+                    </a>
+
+                </li>
+
+            </ul>
+
+            <ul class="paises-menu">
+                <li class="paises-i pais8">
+                    <a href="#">
+                        <span class="paises-idioma">
+                            Chines simplificado
+                      </span>
+                        <span class="paise-artigos">
+                          1 480 000+ hasel                     
+                      </span>
+                    </a>
+
+                </li>
+
+            </ul>
+
+            <ul class="paises-menu">
+                <li class="paises-i pais9">
+                    <a href="#">
+                        <span class="paises-idioma">
+                            Italiano
+                      </span>
+                        <span class="paise-artigos">
+                          1 791 000+ voci                     
+                      </span>
+                    </a>
+
+                </li>
+
+            </ul>
+            <ul class="paises-menu">
+                <li class="paises-i pais10">
+                    <a href="#">
+                        <span class="paises-idioma">
+                            Polski
+                      </span>
+                        <span class="paise-artigos">
+                         1 480 000+ hassel                     
+                      </span>
+                    </a>
+
+                </li>
+
+            </ul>
+
+
+
+
+
+        </nav>
+    </section>
+    <!-- fin seçao para apises-->
+    <!-- inicia botao de busca-->
+    <section class="busca">
+        <form action="">
+            <div class="busca-conteiner">
+                <input type="text" class="busca-texto">
+
+                <select nane="idioma" id="idioma" class="busca-idioma">
+                    <option value="#" lang="fr">len</option>
+                    <option value="fr" lang="fr">Français</option>
+                    <option value="gl" lang="gl">Galego</option>
+                    <option value="hy" lang="hy">Հայերեն</option>
+                    <!-- Hayeren -->
+                    <option value="hi" lang="hi">हिन्दी</option>
+                    <!-- Hindī -->
+                    <option value="hr" lang="hr">Hrvatski</option>
+                    <option value="id" lang="id">Bahasa Indonesia</option>
+                    <option value="it" lang="it">Italiano</option>
+                    <option value="he" lang="he">עברית</option>
+                    <!-- Ivrit -->
+                    <option value="ka" lang="ka">ქართული</option>
+                    <!-- Kartuli -->
+                    <option value="la" lang="es">Español</option>
+                    <option value="lv" lang="lv">Latviešu</option>
+                    <option value="lt" lang="lt">Lietuvių</option>
+                    <option value="hu" lang="hu">Magyar</option>
+                    <option value="mk" lang="mk">Македонски</option>
+                    <!-- Makedonski -->
+                    <option value="arz" lang="arz">مصرى</option>
+                    <!-- Maṣrī -->
+                    <option value="ms" lang="ms">Bahasa Melayu</option>
+                    <option value="min" lang="pt">Portugues</option>
+                    <option value="nl" lang="nl">Nederlands</option>
+                    <option value="ja" lang="ja">日本語</option>
+                    <!-- Nihongo -->
+                    <option value="no" lang="nb">Norsk (bokmål)</option>
+                    <option value="nn" lang="nn">Norsk (nynorsk)</option>
+
+
+                </select>
+                <button class="busca-botao" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </form>
+        <div class="buscar-menu">
+            <button class="busca-menu-iduomas">Wikipedia na sua língua</button>
+        </div>
+
+    </section>
+    <!-- fin botao de busca-->
+    <!--inicio do footer-->
+
+    <footer class="rodape">
+        <div class="rodape-info">
+            <div class="rodape-suporte">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/OOjs_UI_icon_logo-wikipedia.svg/1200px-OOjs_UI_icon_logo-wikipedia.svg.png" alt="imagen wikipedia" class="rodare-suporte-imagem">
+                <div class="rodape-soporte-texto">
+                    <p>
+                        Foundation, uma organização sem fins lucrativos que também aloja vários outros projetos.
+                    </p>
+                    <a href="#" class="suporte">Você pode apoiar nosso trabalho com uma doação.</a>
+                </div>
+            </div>
+            <div class="rodape-app">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/OOjs_UI_icon_logo-wikipedia.svg/1200px-OOjs_UI_icon_logo-wikipedia.svg.png" alt="imagen wikipedia" class="rodare-apps-imagem">
+                <div class="rodae-app-info">
+
+                    <a href="#" class="rodape-apps-link">Descarregar a Wikipédia para Android e iOS</a>
+
+                    <p>
+                        offline, sincronize as suas listas de leitura entre dispositivos e personalize a sua experiência de leitura com a aplicação oficial da Wikipédia.
+
+
+                    </p>
+
+                    <div class="rodape-app-lojas">
+                        <img src="https://www.passagensimperdiveis.com.br/wp-content/themes/viajar2018/app/botao-baixar-android.png" alt="" class="rodape-appstore-imagem">
+
+                        <img src="https://img2.gratispng.com/20180802/ohu/kisspng-rointe-connect-app-for-smart-control-rointe-heat-5b630e4be3b018.1228412915332183799326.jpg" alt="" class="rodape-appstore-imagem">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <ul class="rodape-wikisites">
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/OOjs_UI_icon_logo-wikipedia.svg/1200px-OOjs_UI_icon_logo-wikipedia.svg.png" alt="imagen wikipedia" class="rodare-wikisites-imagem">
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">Commons</span>
+                        <span class="rodape-wikisites-descriçao">Fotos de uso livre e mais</span>
+                    </div>
+
+                </a>
+            </li>
+
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/OOjs_UI_icon_logo-wikipedia.svg/1200px-OOjs_UI_icon_logo-wikipedia.svg.png" alt="imagen wikipedia" class="rodare-wikisites-imagem">
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">Commons</span>
+                        <span class="rodape-wikisites-descriçao">Fotos de uso livre e mais</span>
+                    </div>
+
+                </a>
+            </li>
+
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/OOjs_UI_icon_logo-wikipedia.svg/1200px-OOjs_UI_icon_logo-wikipedia.svg.png" alt="imagen wikipedia" class="rodare-wikisites-imagem">
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">Commons</span>
+                        <span class="rodape-wikisites-descriçao">Fotos de uso livre e mais</span>
+                    </div>
+
+                </a>
+            </li>
+
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/OOjs_UI_icon_logo-wikipedia.svg/1200px-OOjs_UI_icon_logo-wikipedia.svg.png" alt="imagen wikipedia" class="rodare-wikisites-imagem">
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">Commons</span>
+                        <span class="rodape-wikisites-descriçao">Fotos de uso livre e mais</span>
+                    </div>
+
+                </a>
+            </li>
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/OOjs_UI_icon_logo-wikipedia.svg/1200px-OOjs_UI_icon_logo-wikipedia.svg.png" alt="imagen wikipedia" class="rodare-wikisites-imagem">
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">Commons</span>
+                        <span class="rodape-wikisites-descriçao">Fotos de uso livre e mais</span>
+                    </div>
+
+                </a>
+            </li>
+
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/OOjs_UI_icon_logo-wikipedia.svg/1200px-OOjs_UI_icon_logo-wikipedia.svg.png" alt="imagen wikipedia" class="rodare-wikisites-imagem">
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">Commons</span>
+                        <span class="rodape-wikisites-descriçao">Fotos de uso livre e mais</span>
+                    </div>
+
+                </a>
+            </li>
+
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/OOjs_UI_icon_logo-wikipedia.svg/1200px-OOjs_UI_icon_logo-wikipedia.svg.png" alt="imagen wikipedia" class="rodare-wikisites-imagem">
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">Commons</span>
+                        <span class="rodape-wikisites-descriçao">Fotos de uso livre e mais</span>
+                    </div>
+
+                </a>
+            </li>
+
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/OOjs_UI_icon_logo-wikipedia.svg/1200px-OOjs_UI_icon_logo-wikipedia.svg.png" alt="imagen wikipedia" class="rodare-wikisites-imagem">
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">Commons</span>
+                        <span class="rodape-wikisites-descriçao">Fotos de uso livre e mais</span>
+                    </div>
+
+                </a>
+            </li>
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/OOjs_UI_icon_logo-wikipedia.svg/1200px-OOjs_UI_icon_logo-wikipedia.svg.png" alt="imagen wikipedia" class="rodare-wikisites-imagem">
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">Commons</span>
+                        <span class="rodape-wikisites-descriçao">Fotos de uso livre e mais</span>
+                    </div>
+
+                </a>
+            </li>
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/OOjs_UI_icon_logo-wikipedia.svg/1200px-OOjs_UI_icon_logo-wikipedia.svg.png" alt="imagen wikipedia" class="rodare-wikisites-imagem">
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">Commons</span>
+                        <span class="rodape-wikisites-descriçao">Fotos de uso livre e mais</span>
+                    </div>
+
+                </a>
+            </li>
+
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/OOjs_UI_icon_logo-wikipedia.svg/1200px-OOjs_UI_icon_logo-wikipedia.svg.png" alt="imagen wikipedia" class="rodare-wikisites-imagem">
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">Commons</span>
+                        <span class="rodape-wikisites-descriçao">Fotos de uso livre e mais</span>
+                    </div>
+
+                </a>
+            </li>
+
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/OOjs_UI_icon_logo-wikipedia.svg/1200px-OOjs_UI_icon_logo-wikipedia.svg.png" alt="imagen wikipedia" class="rodare-wikisites-imagem">
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">Commons</span>
+                        <span class="rodape-wikisites-descriçao">Fotos de uso livre e mais</span>
+                    </div>
+
+                </a>
+            </li>
+
+        </ul>
+    </footer>
+    <p class="licença">
+        <small>Esta página está disponível sob a <a href="#" class="a">licença Creative Commons Atribuição-Compartilha Igua</a> &bull;</small>
+
+        <small><a href="#" class="a"> Condições de utilização</a> &bull; </small>
+
+        <small><a href="#" class="a">Política de privacidade</a></small>
+    </p>
+    <!--fin do footer-->
+
+
+</body>
+
+</html>
